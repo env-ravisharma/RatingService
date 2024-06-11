@@ -1,18 +1,18 @@
 package com.pp.rating.RatingService.entities;
 
 
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
 
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@Document("user_ratings")
+@Entity
+@Table(name = "user_ratings")
 public class Rating {
 
     @Id
