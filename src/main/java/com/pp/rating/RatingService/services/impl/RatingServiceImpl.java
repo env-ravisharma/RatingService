@@ -29,7 +29,8 @@ public class RatingServiceImpl implements RatingService
 
     @Override
     public List<Rating> getRatingByUserId(String userId) {
-        return ratingRepository.findByUserId(userId);
+        List<Rating> byUserId = ratingRepository.findByUserId(userId);
+        return byUserId;
     }
 
     @Override
